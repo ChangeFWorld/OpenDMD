@@ -68,4 +68,4 @@ with gr.Blocks(css=css) as demo:
         seed.change(fn=predict, inputs=inputs, outputs=image, show_progress=False)
 
 demo.queue(api_open=False)
-demo.launch(show_api=False)
+demo.launch(show_api=False, share=True)
